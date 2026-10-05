@@ -1,11 +1,14 @@
-import Tecnologia from "./assets/img-tecnologia.webp";
-import "./App.css";
+import './App.css'
+import Tecnologia from './assets/img-tecnologia.webp'
 
 function App() {
+
   return (
-    <>
+    <div>
+
+      {/* HEADER */}
       <header>
-        <p>DESI V1/1 2026 - SENAI</p>
+        <p>DESI 2026/V1</p>
 
         <nav>
           <a href="#inicio">Início</a>
@@ -16,174 +19,334 @@ function App() {
         </nav>
       </header>
 
-      <main>
-        {/* INÍCIO */}
-        <section id="inicio" className="body">
-          <h1>Transforme ideias em sistemas.</h1>
 
-          <p className="pe">
-            Desenvolva soluções, aprenda novas tecnologias e construa seu
-            futuro na área de TI.
-          </p>
+      {/* INÍCIO */}
+      <section id="inicio" className="inicio">
 
-          {/* Imagem + botão */}
-          <div className="imagem-container">
-            <img
-              src={Tecnologia}
-              alt="Pessoa utilizando tecnologia com diversos dispositivos digitais"
-            />
+        <h1>Transforme ideias em sistemas</h1>
 
-            <button className="btn">Saiba mais</button>
+        <p>
+          Desenvolva soluções, aprenda novas tecnologias
+          e construa seu futuro na área de TI.
+        </p>
+
+        <button className="btn">
+          Aperte
+        </button>
+
+        <img
+          src={Tecnologia}
+          alt="Imagem relacionada à tecnologia e desenvolvimento de sistemas"
+        />
+
+      </section>
+
+
+      {/* SOBRE */}
+      <section id="sobre" className="sobre">
+
+        <h1>Sobre o curso</h1>
+
+        <h2>O que é Desenvolvimento de Sistemas?</h2>
+
+        <p className="pe">
+          Desenvolvimento de Sistemas é a área responsável por
+          criar, testar e manter softwares e aplicações que
+          solucionam problemas e atendem às necessidades dos usuários.
+        </p>
+
+
+        <h2>Qual o objetivo do curso?</h2>
+
+        <p className="pe">
+          O objetivo do curso de DESI (Desenvolvimento de Sistemas)
+          é preparar profissionais para criar, desenvolver, testar
+          e manter sistemas e aplicações, utilizando tecnologias
+          de programação.
+        </p>
+
+
+        <h2>O que um profissional dessa área faz?</h2>
+
+        <p className="pe">
+          Um profissional de Desenvolvimento de Sistemas cria,
+          testa, mantém e melhora sistemas, aplicativos e sites
+          para solucionar problemas e atender às necessidades
+          dos usuários.
+        </p>
+
+      </section>
+
+
+      {/* CONHECIMENTOS */}
+      <section className="conhecimentos">
+
+        <h2>Conhecimentos Desenvolvidos no Curso</h2>
+
+        <div className="cards">
+
+          <div className="card">
+            <h3>Lógica de Programação</h3>
+            <p>
+              Aprendemos a desenvolver soluções utilizando
+              lógica e algoritmos.
+            </p>
           </div>
-        </section>
 
-        {/* SOBRE */}
-        <section id="sobre" className="conteudo">
-          <h2 className="textogran">
-            O que é Desenvolvimento de Sistemas?
-          </h2>
+          <div className="card">
+            <h3>Desenvolvimento Web</h3>
+            <p>
+              Criação de sites e sistemas utilizando
+              tecnologias web.
+            </p>
+          </div>
 
-          <p>
-            Desenvolvimento de Sistemas é o processo de criar, testar, manter
-            e melhorar sistemas de software que ajudam pessoas ou empresas a
-            realizar tarefas e resolver problemas.
-          </p>
+          <div className="card">
+            <h3>Frontend</h3>
+            <p>
+              Desenvolvimento da parte visual e interativa
+              dos sistemas.
+            </p>
+          </div>
 
-          <h2 className="textogran">
-            Qual é o objetivo do curso?
-          </h2>
+          <div className="card">
+            <h3>Backend</h3>
+            <p>
+              Desenvolvimento da parte responsável pelo
+              funcionamento do sistema.
+            </p>
+          </div>
 
-          <p>
-            O objetivo do curso é preparar o aluno para desenvolver sistemas e
-            soluções tecnológicas, ensinando programação, banco de dados,
-            desenvolvimento web, análise de sistemas, testes e outras
-            tecnologias.
-          </p>
+          <div className="card">
+            <h3>Banco de Dados</h3>
+            <p>
+              Armazenamento, organização e gerenciamento
+              de informações.
+            </p>
+          </div>
 
-          <p>
-            Além da parte técnica, o curso também ajuda o aluno a desenvolver
-            raciocínio lógico e capacidade de resolver problemas.
-          </p>
+          <div className="card">
+            <h3>Desenvolvimento de APIs</h3>
+            <p>
+              Criação de recursos para comunicação entre
+              diferentes sistemas.
+            </p>
+          </div>
 
-          <h2 className="textogran">
-            O que um profissional dessa área faz?
-          </h2>
+          <div className="card">
+            <h3>Aplicativos</h3>
+            <p>
+              Desenvolvimento de aplicações para diferentes
+              plataformas.
+            </p>
+          </div>
 
-          <p>
-            O profissional de Desenvolvimento de Sistemas pode:
-          </p>
+          <div className="card">
+            <h3>Versionamento de Código</h3>
+            <p>
+              Utilização de ferramentas como Git e GitHub
+              para controlar alterações.
+            </p>
+          </div>
 
-          <ul>
-            <li>Criar sites e aplicativos;</li>
-            <li>Programar sistemas;</li>
-            <li>Criar e organizar bancos de dados;</li>
-            <li>Testar sistemas e corrigir erros;</li>
-            <li>Fazer manutenção e melhorias em programas;</li>
-            <li>Analisar problemas e criar soluções usando tecnologia;</li>
-            <li>Trabalhar em equipe no desenvolvimento de projetos.</li>
-          </ul>
-        </section>
+        </div>
 
-        {/* CONHECIMENTOS */}
-        <section
-          id="tecnologias"
-          className="conhecimentos"
-        >
-          <h2>Conhecimentos desenvolvidos no curso</h2>
+      </section>
 
-          <p className="descricao">
-            Durante o curso, aprendemos diferentes áreas da tecnologia e do
-            desenvolvimento de sistemas.
-          </p>
 
-          <div className="cards">
+      {/* TECNOLOGIAS */}
+      <section id="tecnologias" className="tecnologias">
 
-            <div className="card">
-              <h3>💡 Lógica de Programação</h3>
-              <p>
-                Aprendemos a criar algoritmos, resolver problemas e desenvolver
-                o raciocínio lógico necessário para programar.
-              </p>
-            </div>
+        <h2>Tecnologias</h2>
 
-            <div className="card">
-              <h3>🌐 Desenvolvimento Web</h3>
-              <p>
-                Criamos sites utilizando tecnologias como HTML, CSS e
-                JavaScript, aprendendo a estruturar e estilizar páginas.
-              </p>
-            </div>
+        <p>
+          Algumas tecnologias estudadas no curso de
+          Desenvolvimento de Sistemas:
+        </p>
 
-            <div className="card">
-              <h3>🎨 Frontend</h3>
-              <p>
-                Trabalhamos com a parte visual das aplicações, criando
-                interfaces interativas, organizadas e responsivas.
-              </p>
-            </div>
+        <div className="tecnologias-container">
 
-            <div className="card">
-              <h3>⚙️ Backend</h3>
-              <p>
-                Aprendemos sobre a parte responsável pelo funcionamento interno
-                dos sistemas, regras de negócio e processamento de informações.
-              </p>
-            </div>
+          <div className="tecnologia">
+            <h3>HTML</h3>
+          </div>
 
-            <div className="card">
-              <h3>🗄️ Banco de Dados</h3>
-              <p>
-                Aprendemos a armazenar, organizar, consultar e gerenciar dados
-                utilizados pelos sistemas.
-              </p>
-            </div>
+          <div className="tecnologia">
+            <h3>CSS</h3>
+          </div>
 
-            <div className="card">
-              <h3>🔗 Desenvolvimento de APIs</h3>
-              <p>
-                Conhecemos APIs e como elas permitem que diferentes sistemas
-                troquem informações entre si.
-              </p>
-            </div>
+          <div className="tecnologia">
+            <h3>JavaScript</h3>
+          </div>
 
-            <div className="card">
-              <h3>📱 Aplicativos</h3>
-              <p>
-                Conhecemos conceitos relacionados ao desenvolvimento de
-                aplicativos e soluções para dispositivos móveis.
-              </p>
-            </div>
+          <div className="tecnologia">
+            <h3>React</h3>
+          </div>
 
-            <div className="card">
-              <h3>🔄 Versionamento de Código</h3>
-              <p>
-                Aprendemos a utilizar ferramentas como Git e GitHub para
-                controlar versões, acompanhar alterações e colaborar em
-                projetos.
-              </p>
-            </div>
-            </div>
-            <section className="tecnologias">
-  <p>Crie uma área visual apresentando algumas tecnologias relacionadas ao curso.</p>
+          <div className="tecnologia">
+            <h3>Node.js</h3>
+          </div>
 
-  <div className="tecnologias-lista">
-    <button>HTML</button>
-    <button>CSS</button>
-    <button>JavaScript</button>
-    <button>React</button>
-    <button>Node.js</button>
-    <button>SQL</button>
-    <button>Git</button>
-    <button>GitHub</button>
-  </div>
-</section>
-  
+          <div className="tecnologia">
+            <h3>SQL</h3>
+          </div>
 
-          
-        </section>
-      </main>
-    </>
-  );
+          <div className="tecnologia">
+            <h3>Git</h3>
+          </div>
+
+          <div className="tecnologia">
+            <h3>GitHub</h3>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* MERCADO */}
+      <section id="mercado" className="areas">
+
+        <h2>Áreas de Atuação</h2>
+
+        <p>
+          Algumas possibilidades profissionais para quem
+          se forma em Desenvolvimento de Sistemas:
+        </p>
+
+        <div className="areas-container">
+
+          <div className="area">
+            <h3>Frontend</h3>
+            <p>
+              Criação da parte visual e interativa dos sistemas.
+            </p>
+          </div>
+
+          <div className="area">
+            <h3>Backend</h3>
+            <p>
+              Desenvolvimento da parte lógica e funcional.
+            </p>
+          </div>
+
+          <div className="area">
+            <h3>Full Stack</h3>
+            <p>
+              Atuação tanto no frontend quanto no backend.
+            </p>
+          </div>
+
+          <div className="area">
+            <h3>Aplicações</h3>
+            <p>
+              Desenvolvimento de aplicativos e sistemas.
+            </p>
+          </div>
+
+          <div className="area">
+            <h3>Banco de Dados</h3>
+            <p>
+              Organização e gerenciamento de informações.
+            </p>
+          </div>
+
+          <div className="area">
+            <h3>Suporte e Manutenção</h3>
+            <p>
+              Correção de problemas e manutenção de sistemas.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* PROJETOS */}
+      <section id="projetos" className="projetos">
+
+        <h2>Exemplos de Projetos</h2>
+
+        <p>
+          Alguns sistemas que um desenvolvedor pode criar:
+        </p>
+
+        <div className="projetos-container">
+
+          <div className="projeto">
+            <h3>Cadastro de Clientes</h3>
+            <p>
+              Sistema para cadastrar e organizar informações
+              de clientes.
+            </p>
+          </div>
+
+          <div className="projeto">
+            <h3>Sistema de Estoque</h3>
+            <p>
+              Controle de produtos, quantidades e movimentações.
+            </p>
+          </div>
+
+          <div className="projeto">
+            <h3>Agendamentos</h3>
+            <p>
+              Aplicação para marcar e organizar horários.
+            </p>
+          </div>
+
+          <div className="projeto">
+            <h3>Loja Virtual</h3>
+            <p>
+              Plataforma para apresentar e vender produtos.
+            </p>
+          </div>
+
+          <div className="projeto">
+            <h3>Dashboard Administrativo</h3>
+            <p>
+              Painel para visualizar informações do sistema.
+            </p>
+          </div>
+
+          <div className="projeto">
+            <h3>Aplicativo de Tarefas</h3>
+            <p>
+              Aplicativo para criar e organizar tarefas.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* CTA */}
+      <section className="cta">
+
+        <h2>
+          Seu futuro na tecnologia pode começar aqui.
+        </h2>
+
+        <p>
+          Conheça o curso Técnico em Desenvolvimento de Sistemas.
+        </p>
+
+      </section>
+
+
+      {/* FOOTER */}
+      <footer>
+
+        <p>DESI 2026/V1</p>
+        <p>SENAI</p>
+        <p>2026</p>
+        <p>Sophia Kruk Andraski</p>
+
+      </footer>
+
+    </div>
+  )
 }
 
-export default App;
+export default App
